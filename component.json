@@ -3,5 +3,11 @@
   "version": "0.0.1",
   "styles": [
     "index.css"
+  ],
+  "images": [
+    "images/down.png",
+    "images/down.svg",
+    "images/up.png",
+    "images/up.svg"
   ]
 }

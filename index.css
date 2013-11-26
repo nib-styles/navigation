@@ -162,72 +162,76 @@ nav ol{
   }
 }
 
-.nav-2 .nav__item--parent > a,
-.nav-2 .nav__item--parent > span {
-  position: relative;
-  z-index: 2;
+.nav-2 .nav__item--parent>a,
+.nav-2 .nav__item--parent>span {
+    position: relative;
+    z-index: 2
 }
 
-.nav-2 .nav__item--parent > a:after,
-.nav-2 .nav__item--parent > span:after {
-  display: block;
-  content: "";
-  transform: translate(-50%);
-  top: 50%;
-  position: absolute;
-  right: 15px;
-  height: 16px;
-  width: 16px;
-  opacity: 0.8;
-  background: component-url('nib-styles-accordion', 'down.png') no-repeat top right;
-  background: component-url('nib-styles-accordion', 'down.svg') no-repeat top right, none;
-  background-size: 16px 16px;
+.nav-2 .nav__item--parent>a:after,
+.nav-2 .nav__item--parent>span:after {
+    display: block;
+    content: '';
+    content: "";
+    display: block;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    right: 15px;
+    height: 16px;
+    width: 16px;
+    opacity: .8;
+    background: url('images/down.png') no-repeat top right;
+    background: url('images/down.svg') no-repeat top right,none;
+    background-size: 16px 16px
 }
 
-/* Pre-load the other image so we don't get a flash */
-.nav-2 .nav__item--parent > a:before,
-.nav-2 .nav__item--parent > span:before {
-  background: component-url('nib-styles-accordion', 'up.svg') no-repeat top right;
-  height: 0;
-  width: 0;
-  position: absolute;
+.nav-2 .nav__item--parent>a:before,
+.nav-2 .nav__item--parent>span:before {
+    display: block;
+    content: '';
+    background: url('images/up.svg') no-repeat top right;
+    height: 0;
+    width: 0;
+    position: absolute
 }
 
-.nav-2 .nav__item--parent > a.is-open:after,
-.nav-2 .nav__item--parent > span.is-open:after {
-  background-image: component-url('nib-styles-accordion', 'up.png');
-  background-image: component-url('nib-styles-accordion', 'up.svg'), none;
+.nav-2 .nav__item--parent>a.is-open:after,
+.nav-2 .nav__item--parent>span.is-open:after {
+    background-image: url('images/up.png');
+    background-image: url('images/up.svg'),none;
 }
 
-.nav-2 .nav__item--parent > a.is-open:hover::after,
-.nav-2 .nav__item--parent > span.is-open:hover::after {
-  opacity: 1;
+.nav-2 .nav__item--parent>a:hover::after,
+.nav-2 .nav__item--parent>span:hover::after {
+    opacity: 1
 }
 
-/*
- * vertical modifier
- */
-
-.nav-2.nav--vertical > .nav__item {
-  float: none;
-}
-.nav-2.nav--vertical > .nav__item:last-child > a,
-.nav-2.nav--vertical > .nav__item:last-child > span {
-  border-bottom: 0;
+.nav-2.nav--vertical>.nav__item {
+    float: none
 }
 
-.nav-2.nav--vertical > .nav__item > a,
-.nav-2.nav--vertical > .nav__item > span {
-  border-radius: 0;
-  text-align: left;
-  padding: 0 20px;
-  border-bottom: 1px solid #bbb;
-  border-left: 0;
+.nav-2.nav--vertical>.nav__item:last-child>a,
+.nav-2.nav--vertical>.nav__item:last-child>span {
+    border-bottom: 0
 }
 
-.nav-2.nav--vertical > .nav__sub {
-  position: relative;
-  z-index: 1;
+.nav-2.nav--vertical>.nav__item>a,
+.nav-2.nav--vertical>.nav__item>span {
+    border-radius: 0;
+    text-align: left;
+    padding: 0 20px;
+    border-bottom: 1px solid #bbb;
+    border-left: 0
+}
+
+.nav-2.nav--vertical>.nav__sub {
+    position: relative;
+    z-index: 1
 }
 
 /*
@@ -334,7 +338,7 @@ nav ol{
   display: block;
   font-size: 12px;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 40px;
   padding: 0 20px;
   text-decoration: none;
 }
