@@ -75,7 +75,8 @@ nav ol{
 .nav-2 > .nav__item > span {
   text-rendering:optimizeLegibility;
   -webkit-font-smoothing:antialiased;
-  background: linear-gradient(top,#f9f9f9,#ddd);
+  background: #ddd;
+  background: linear-gradient(to bottom,#f9f9f9,#ddd);
   border-bottom: 1px solid #fff;
   border-left: 1px solid #fff;
   border-right: 1px solid #ddd;
@@ -93,13 +94,13 @@ nav ol{
 
 .nav-2 > .nav__item > a:hover ,
 .nav-2 > .nav__item > span:hover {
-  background: linear-gradient(top,#fff,#ddd);
+  background: linear-gradient(to bottom,#fff,#ddd);
   color: #444;
 }
 
 .nav-2 > .nav__item > a.is-selected ,
 .nav-2 > .nav__item > span.is-selected {
-  background: linear-gradient(top,#fff,#ddd);
+  background: linear-gradient(to bottom,#fff,#ddd);
   color: #1f7c07;
   position: relative;
 }
@@ -174,10 +175,6 @@ nav ol{
     content: '';
     content: "";
     display: block;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     transform: translateY(-50%);
     top: 50%;
     position: absolute;
