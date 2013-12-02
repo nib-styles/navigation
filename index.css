@@ -28,6 +28,10 @@ nav ol{
   position: fixed;
 }
 
+.no-cssgradients .nav-sticky a {
+  font-size: 11px !important;
+}
+
 @media (max-width: 870px) {
   .nav-sticky a {
     font-size: 11px !important;
